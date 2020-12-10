@@ -4,9 +4,10 @@
 
 * python3
 * pipenv
+* make
 
 ## Commands
 
 run application: `pipenv run app`
 
-test: `pipenv run test`
+test: `make test`
