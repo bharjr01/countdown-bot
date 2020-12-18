@@ -14,4 +14,4 @@ install:
 
 test:
 	pipenv run python -m unittest discover
-	pipenv run mypy -m src -m test
+	pipenv run mypy -p src -p test

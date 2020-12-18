@@ -1,5 +1,5 @@
 import json
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Union
 
 
 def find_anagrams(selection: List[str]):
@@ -13,7 +13,7 @@ def find_anagrams(selection: List[str]):
     return sorted(anagrams, key=len)[-5:]
 
 
-def __create_model(selection: str or List[str]) -> List[Tuple[str, int]]:
+def __create_model(selection: Union[str, List[str]]) -> List[Tuple[str, int]]:
     return [(char, selection.count(char)) for char in set(selection)]
 
 
